@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css">
   <title>Hassaan Hashmi</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" href="assets/icon.ico" type="image/x-icon">
@@ -12,33 +13,41 @@
 <body>
   <canvas id="background-grid"></canvas>
   <div class="overlay">
-    <table style="width:100%; border-collapse: collapse;">
+    <table style="width:100%; border-collapse: collapse; padding-bottom: 50%;">
       <tr>
-        <!-- Left Column: Text Content -->
-        <td style="width:80%; vertical-align: top; padding-right: 2%;">
+        <!-- Left Column: Title Name -->
+        <td style="width:50%; vertical-align: top;text-align: center;">
           <header>
             <h1 class="name_title">Hassaan Hashmi</h1>
-            <div class="typewriter" id="typewriter"></div>
           </header>
+          <section id="contact">
+            <div class="contact-buttons">
+              <a class="contact-button" href="assets/CV.pdf">CV</a>
+              <a class="contact-button" href="https://github.com/hassaanhashmi" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="contact-button" href="https://scholar.google.com/citations?user=lgN2JyMAAAAJ&hl=en" title="Google Scholar" target="_blank">
+                <i class="fas fa-graduation-cap"></i>
+              </a>
+              <a class="contact-button" href="https://twitter.com/HassaanH/" title="Twitter" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </section>
         </td>
         <!-- Right Column: Profile Image -->
-        <td style="width:20%; vertical-align: top; text-align: right;">
-          <div class="profile-image-container">
-            <img src="assets/profile_pic.png" alt="Profile Photo" class="profile-image">
+        <td style="width:50%; vertical-align: top; text-align: center;">
+          <div class="profile-stack">
+            <div class="profile-image-container fade-in" id="profileImage">
+              <img src="assets/profile_pic.png" alt="Profile Photo" class="profile-image">
+            </div>
+            <a class="email-style">hassaan&lt;dot&gt;hashmi&lt;@&gt;yale&lt;dot&gt;edu</a>
           </div>
-          <p class="email-style">hassaan&lt;dot&gt;hashmi&lt;@&gt;yale&lt;dot&gt;edu</p>
         </td>
       </tr>
     </table>
-
-    <section id="contact">
-      <div class="contact-buttons">
-        <a class="contact-button" href="assets/CV.pdf">CV</a>
-        <a class="contact-button" href="https://github.com/hassaanhashmi" target="_blank">GitHub</a>
-        <a class="contact-button" href="https://scholar.google.com/citations?user=lgN2JyMAAAAJ&hl=en" target="_blank">Google Scholar</a>
-        <a class="contact-button" href="https://www.twitter.com/HassaanH/" target="_blank">Twitter</a>
-      </div>
-    </section>
+    <div class="typewriter" id="typewriter"></div>
+    
   </div>
   <script src="grid.js"></script> 
 </body>

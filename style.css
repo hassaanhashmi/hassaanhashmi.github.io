@@ -19,20 +19,59 @@ canvas#background-grid {
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
+
+.header-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows wrapping on zoom/mobile */
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.header-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Fade-in class */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s; /*ease-in;*/
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .header-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+}
+
 
 .overlay {
   position: relative;
   padding: 2rem;
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
 }
 
 .name_title {
   color: #7DFDFE;
+  font-size: 1.5em;
 }
 
 .typewriter {
+  margin-top: 1.5rem;
   border-right: 0.15em solid #7DFDFE;
   white-space: normal;
   font-family: 'Helvetica', sans-serif;
@@ -41,8 +80,8 @@ canvas#background-grid {
 }
 
 .profile-image-container {
-  width: 200px; /* Adjust the size as needed */
-  height: 200px;
+  width: 120px; /* Adjust the size as needed */
+  height: 120px;
   margin: 0 auto;
   border: 2px solid #7DFDFE;
   border-radius: 0%;
@@ -73,7 +112,6 @@ canvas#background-grid {
 }
 
 .contact-buttons {
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -81,23 +119,27 @@ canvas#background-grid {
   margin-top: 1rem;
 }
 
+
 .contact-button {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid #7DFDFE;
   border-radius: 8px;
   color: #7DFDFE;
-  text-decoration: none;            /* ✅ ensures no underline */
-  font-weight: bold;
-  /* box-shadow: 0 0 2px #7DFDFE, 0 0 3px #7DFDFE; */
+  text-decoration: none;
+  font-size: 1.4rem;
   transition: background 0.3s, color 0.3s;
 }
 
 .contact-button:hover {
   background: #7DFDFE;
   color: black;
-  text-decoration: none;            /* ✅ still no underline on hover */
 }
+
+
 
 
 
