@@ -1,0 +1,111 @@
+/* style.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+  background: rgb(0, 0, 0);
+  color: #7DFDFE;
+  overflow: hidden;
+  z-index: 1;
+  text-shadow:
+    -2px 2px 1px rgba(103, 132, 132, 0.267); /* shadow to make it pop off grid */
+}
+
+canvas#background-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: relative;
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.name_title {
+  color: #7DFDFE;
+}
+
+.typewriter {
+  border-right: 0.15em solid #7DFDFE;
+  white-space: normal;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.2em;
+  color: #7DFDFE;
+}
+
+.profile-image-container {
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  margin: 0 auto;
+  border: 2px solid #7DFDFE;
+  border-radius: 0%;
+  overflow: hidden;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.email-style {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+  font-family: 'Inconsolata', monospace;
+  color: #00ffff;
+}
+
+
+
+.panel {
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #7DFDFE;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1px;
+}
+
+.contact-buttons {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #7DFDFE;
+  border-radius: 8px;
+  color: #7DFDFE;
+  text-decoration: none;            /* ✅ ensures no underline */
+  font-weight: bold;
+  /* box-shadow: 0 0 2px #7DFDFE, 0 0 3px #7DFDFE; */
+  transition: background 0.3s, color 0.3s;
+}
+
+.contact-button:hover {
+  background: #7DFDFE;
+  color: black;
+  text-decoration: none;            /* ✅ still no underline on hover */
+}
+
+
+
+
+a {
+  color: #7DFDFE;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

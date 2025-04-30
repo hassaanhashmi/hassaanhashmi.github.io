@@ -1,64 +1,45 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Hassaan Hashmi</title>
-
-    <meta name="author" content="Hassaan Hashmi">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hassaan Hashmi</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="aboutme.js"></script>
+</head>
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:60%;vertical-align:middle">
-              <h1>
-                Hassaan Hashmi
-              </h1>
-              <p>I am a PhD student at the Department of <a href="https://seas.yale.edu/departments/electrical-engineering">Electrical Engineering</a>, <a href="https://www.yale.edu/">Yale University</a>. I am being advised by <a href="http://dkalogerias.org/">Dionysis Kalogerias</a>.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:hassaan.hashmi@yale.edu">Email</a> &nbsp;|&nbsp;
-                <a href="https://github.com/hassaanhashmi">GitHub</a> &nbsp;|&nbsp;
-                <a href="https://scholar.google.com/citations?user=lgN2JyMAAAAJ&hl=en">Google Scholar</a> &nbsp;|&nbsp;
-                <a href="https://www.twitter.com/HassaanH/">Twitter</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <img style="width:100%;max-width:100%" alt="profile photo" src="images/profile_pic.png">
-            </td>
-          </tr>
-        </table>
+  <canvas id="background-grid"></canvas>
+  <div class="overlay">
+    <table style="width:100%; border-collapse: collapse;">
+      <tr>
+        <!-- Left Column: Text Content -->
+        <td style="width:80%; vertical-align: top; padding-right: 2%;">
+          <header>
+            <h1 class="name_title">Hassaan Hashmi</h1>
+            <div class="typewriter" id="typewriter"></div>
+          </header>
+        </td>
+        <!-- Right Column: Profile Image -->
+        <td style="width:20%; vertical-align: top; text-align: right;">
+          <div class="profile-image-container">
+            <img src="assets/profile_pic.png" alt="Profile Photo" class="profile-image">
+          </div>
+          <p class="email-style">hassaan&lt;dot&gt;hashmi&lt;@&gt;yale&lt;dot&gt;edu</p>
+        </td>
+      </tr>
+    </table>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:2.5%;width:100%;vertical-align:middle">
-              <h2>Research</h2>
-              <p>
-                My research interests are in reinforcement learning, wireless autonomy and risk-aware learning. You can find my CV <a href="/assets/CV.pdf">here</a>.
-              </p>
-            </td>
-          </tr>
-        </table>
-        <br>
-        <br>
-        <br>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-          <tr>
-            <td style="padding:0px">
-              <br>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
+    <section id="contact">
+      <div class="contact-buttons">
+        <a class="contact-button" href="assets/CV.pdf">CV</a>
+        <a class="contact-button" href="https://github.com/hassaanhashmi" target="_blank">GitHub</a>
+        <a class="contact-button" href="https://scholar.google.com/citations?user=lgN2JyMAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a class="contact-button" href="https://www.twitter.com/HassaanH/" target="_blank">Twitter</a>
+      </div>
+    </section>
+  </div>
+  <script src="grid.js"></script> 
 </body>
-
 </html>
